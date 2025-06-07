@@ -7,119 +7,41 @@
     padding-right: 2rem;
     position:fixed;
     transition: width 0.3s ease;
-    overflow: hidden;
-    }
-
-    
-    .sidebar.collapsed {
-    width: 80px;
-    }
-
-    .sidebar.collapsed .nav-item span,
-    .sidebar.collapsed .support-item span,
-    .sidebar.collapsed .logo .nav-label  {
-    display: none;
-    }
-
-    .sidebar.collapsed .nav-item,
-    .sidebar.collapsed .support-item {
-    justify-content: center;
-    }
-
-    
-    .sidebar:hover .toggle-button {
+    /* overflow: hidden; */
+    }    
+.sidebar:hover .toggle-button {
     opacity: 1;
     }
 
-    .sidebar.sidebar.collapsed .toggle-button{
-    opacity: 1; /* Show the button when collapsed */
-    }
-
-    .sidebar.collapsed .nav-item {
-    padding: 0.75rem 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-
-    .sidebar.collapsed .nav-icon {
-    display: block;
-    }
-
-
-    .sidebar .nav-item{
+.sidebar .nav-item{
     color: var(--light-text);
-    padding: 1rem 1rem;
     display: block;
     text-decoration: none;
     
     }
 
-    .sidebar .nav-item:hover {
+.sidebar .nav-item:hover {
     color: var(--accent); 
     }
-
-
-    .logo {
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding-left: 5rem;
-        padding-top: 1.5rem;
-        white-space: nowrap;
-        transition: opacity 0.3s ease;
-        flex-grow: 1;
-        }
-
-    .sidebar.collapsed .logo {
-        opacity: 0;
-        pointer-events: none;
-        }
-
-        .chevron-icon,
-        .menu-icon {
-        stroke-width: 3;
-        width: 24px;
-        height: 24px;
-        }
-
-
-/* works for the icon to collapse the sidebar */
-    .sidebar-header { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: irem;
-    position: relative;
-    }
-
-    .toggle-button {
-    background: none;
-    border: none;
-    color: var(--light-text);
-    cursor: pointer;
-    margin-top: 1.5rem;
-    padding: 0.5rem ;
-    opacity: 0 ;
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-top: 1.5rem;
+    white-space: nowrap;
     transition: opacity 0.3s ease;
-    z-index: 10;
+    flex-grow: 1;
     }
 
-    .toggle-button svg {
-        transition: transform 0.3s ease;
-    }
+    /* Nav items settings */
 
-    .toggle-button:hover {
-        color: var(--accent);
-        filter: drop-shadow(0 0 5px var(--accent));
-        }
-
-    .nav{
+.nav{
         padding-top: 2rem;
         flex-direction: column;
         display: flex;
     }
 
-    .nav-item {
+.nav-item {
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -130,139 +52,126 @@
     position: relative;
     }
 
-
 .nav-item:hover {
-    background-color: var(--hover-bg-light);
-    color: var(--hover-text);
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+        background-color: var(--hover-bg-light);
+        color: var(--hover-text);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
 
 .nav-item.active:hover  {
-    color: var(--hover-bg);
-}
-
+        color: var(--hover-bg);
+    }
 
 .nav-item.active .nav-content {
-background-color: var(--accent);     
-border-color: var(--dark-text);        
-color: var(--light-text);            
-font-weight: bold;
-box-shadow:
-rgba(192, 148, 45, 0.12) 0px 2px 1px, 
-    rgba(22, 18, 9, 0.15) 0px 4px 2px,     
-    rgba(14, 12, 9, 0.18) 0px 8px 4px,     
-    rgba(0, 0, 0, 0.21) 0px 16px 8px,    
-    rgba(14, 13, 10, 0.25) 0px 32px 16px; 
-    
-transition: all 0.3s ease-in-out;
+    background-color: var(--accent);     
+    border-color: var(--dark-text);        
+    color: var(--light-text);            
+    font-weight: bold;
+    box-shadow:
+    rgba(192, 148, 45, 0.12) 0px 2px 1px, 
+        rgba(22, 18, 9, 0.15) 0px 4px 2px,     
+        rgba(14, 12, 9, 0.18) 0px 8px 4px,     
+        rgba(0, 0, 0, 0.21) 0px 16px 8px,    
+        rgba(14, 13, 10, 0.25) 0px 32px 16px; 
+        
+    transition: all 0.3s ease-in-out;
 
-}
-
+    }
 
 .nav-item .icon {
-    flex-shrink: 0;       
-    margin-right: 1rem;
-    margin-left: 3rem;   
-    padding-top: 0.15rem; 
-    box-shadow: rgba(192, 148, 45, 0.12) 0px 2px 1px;
-}
+        flex-shrink: 0;       
+        margin-right: 1rem;
+        margin-left: 3rem;   
+        padding-top: 0.15rem; 
+        box-shadow: rgba(192, 148, 45, 0.12) 0px 2px 1px;
+    }
 
-
-    .nav-item span {
+.nav-item span {
     font-size: 18px;
     white-space: nowrap; 
     box-shadow: rgba(192, 148, 45, 0.12) 0px 2px 1px;
     }
 
-
-    .nav-item.active {
+.nav-item.active {
         background-color: var(--accent); 
         color: var(--dark-text);
         font-weight: bold;
         border-radius: 20px
     }
 
-    .nav-item.active .icon {
+.nav-item.active .icon {
         color: var(--light-text);
         box-shadow: rgba(250, 250, 250, 0.12) 0px 2px 1px;
     }
 
-    .sidebar.collapsed .nav-item:hover::after {
-    content: attr(data-label);
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #2b2b3c;
-    color: white;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    white-space: nowrap;
-    margin-left: 10px;
-    font-size: 0.9rem;
-    z-index: 10;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
 
-    .nav-divider {
-    border: none;
+
+/* Support section setting  */
+
+.nav-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
     background-color: #CFBB99; 
     opacity: 0.2; 
-    height: 1px;
-    }
-
-    .support-section {
-    margin-top: 1rem;
-    }
-
-    .support-title{
-        font-size: 14px;
-        opacity: 0.9;
-    }
-
-    .support-text {
-    white-space: nowrap;
-    }
-
-    .support-item {
-        display: flex;
-        align-items: center;
-        font-size: 12px;               
-        gap: 0.5rem;
-        color: var(--light-text);
-        margin: 0.25rem 0;
-        padding: 0.25rem 0.5rem;        /* Less padding */
-        margin-left: 2rem;             /* Pushes it to the left */
-        transition: color 0.3s ease;
 }
 
-    .support-item:hover {
+.support-section {
+    position: relative;
+    margin-top: 2rem;
+    }
+
+.support-title{
+    font-size: 14px;
+    opacity: 0.9;
+    }
+
+.support-text {
+    white-space: nowrap;
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;               
+    gap: 0.5rem;
+    color: var(--light-text);
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;        /* Less padding */
+    margin-left: 2rem;             /* Pushes it to the left */
+    transition: color 0.3s ease;
+}
+
+.support-item:hover {
     color: var(--accent);
     }
 
-    .support-item.active {
+.support-item.active {
     background-color: var(--accent); 
     color: var(--dark-text);
     font-weight: bold;
     border-radius: 20px
     }
 
-    .support-item.active .icon {
+.support-item.active .icon {
         color: var(--light-text);
         box-shadow: rgba(250, 250, 250, 0.12) 0px 2px 1px;
     }
 
 
 
-    .logout-button {
+/* Login button setting */
+
+.logout-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,18 +188,170 @@ transition: all 0.3s ease-in-out;
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
     }
 
-    .logout-button:hover {
+.logout-button:hover {
     background-color: rgba(255, 255, 255, 0.08);
     color: #d4e77c;
     border-color: #cedd8b;
     }
 
-    .logout-button .icon {
+.logout-button .icon {
     flex-shrink: 0;
     color: inherit;
     }
 
-    .logout-button:hover .icon {
+.logout-button:hover .icon {
     transform: scale(1.1);
     transition: transform 0.2s ease;
     }
+
+
+    /* Collapsed settings */
+
+    /* works for the icon to collapse the sidebar */
+.sidebar-header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    }
+
+.sidebar.collapsed .logo {
+        opacity: 0;
+        pointer-events: none;
+        }
+
+.chevron-icon,
+.menu-icon {
+        stroke-width: 3;
+        width: 24px;
+        height: 24px;
+        }
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: var(--light-text);
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.5rem ;
+    opacity: 0 ;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    }
+
+.toggle-button svg {
+        transition: transform 0.3s ease;
+    }
+
+.toggle-button:hover {
+        color: var(--accent);
+        filter: drop-shadow(0 0 5px var(--accent));
+        }
+
+.sidebar.collapsed {
+    width: 100px;
+    padding-left: 0;
+    padding-right: 2.5rem;
+
+    }
+
+.sidebar.collapsed .nav-item span,
+.sidebar.collapsed .support-item span,
+.sidebar.collapsed .logo .nav-label  {
+    display: none;
+    }
+
+.sidebar.collapsed .nav-item,
+.sidebar.collapsed .support-item  {
+    justify-content: center;
+    }
+    
+  /* Hide support title when sidebar is collapsed */
+.sidebar.collapsed .support-title {
+    display: none;
+}
+
+/* Ensure divider is visible and spaced in collapsed state */
+.sidebar.collapsed .nav-divider {
+    margin-top: 1rem;
+    opacity: 0.2;
+    
+}
+
+/* Style individual support items */
+.sidebar.collapsed .support-item {
+    display: flex; /* Changed from block to flex for better layout control */
+    width: 100%; /* Optional: ensures alignment when nested inside a flex container */
+    position: relative; /* For tooltip positioning */              
+    margin: 0;
+    margin-left: 1rem; 
+    padding: 0.75rem 0.5rem;
+    
+}
+
+.sidebar.collapsed .support-item .icon {
+    width: 22px; /* Adjust icon size */
+    height: 22px;  
+    box-shadow: rgba(192, 148, 45, 0.12) 0px 2px 1px;
+    }
+
+.sidebar.collapsed .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--accent); 
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.sidebar.collapsed .nav-item:hover::after {
+    content: attr(data-label);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--sidebar-bg);
+    color: var(--light-text);
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+    border-radius: 6px;
+    margin-left: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    z-index: 10;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar.sidebar.collapsed .toggle-button{
+    opacity: 1; /* Show the button when collapsed */
+    }
+
+.sidebar.collapsed .nav-item {
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    
+    }
+
+.sidebar.collapsed .nav-item .icon {
+    display: block;
+    }
+
+.sidebar.collapsed .logout-button .title {
+    display: none;
+}
+
+.sidebar.collapsed .logout-button{ 
+    position: relative;
+    margin: 6rem 2rem 0 0.75rem; /* Adjusted margin for better alignment */
+    left: 0;
+    right: 0;
+    background-color: #000;
+
+}
+
+.sidebar.collapsed .logout-button .icon {
+    width: 40px; /* Adjust icon size */
+    
+    }
+
+    

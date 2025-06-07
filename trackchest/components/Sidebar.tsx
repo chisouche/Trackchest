@@ -73,28 +73,28 @@ export default function Sidebar() {
        {/* Support Section */}
       <hr className="nav-divider" />
           <div className="support-section">
-          <h3 className="support-title">Support</h3>
-        {supportItems.map(({ name, href, icon: Icon }) => {
-          const isActive = pathname === href;
-          return (
-            <Link
-              key={name}
-              href={href}
-              className={`support-item ${isActive ? "active" : ""}`}
-              title={collapsed ? name : undefined}
-            >
-              <Icon size={18} className="icon small-icon" />
-              {!collapsed && <span>{name}</span>}
-            </Link>
-          );
-        })}
-      </div>
+            <h3 className="support-title">Support</h3>
+              {supportItems.map(({ name, href, icon: Icon }) => {
+                const isActive = pathname === href;
+                return (
+                  <Link
+                    key={name}
+                    href={href}
+                    className={`support-item ${isActive ? "active" : ""}`}
+                    title={collapsed ? name : undefined}
+                  >
+                    <Icon size={18} className="icon small-icon" />
+                    {!collapsed && <span>{name}</span>}
+                  </Link>
+                );
+              })}
+            </div>
 
 
-      <button className="logout-button" title={collapsed ? "Logout" : undefined}>
-        <LogOut size={20} className="icon" />
-        {!collapsed && "Logout"}
-      </button>
+            <button className="logout-button" title={collapsed ? "Logout" : undefined}>
+              <LogOut size={22} className="icon" />
+              {!collapsed && "Logout"}
+            </button>
 
     </aside>
   );
