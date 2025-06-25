@@ -81,9 +81,7 @@
         rgba(14, 12, 9, 0.18) 0px 8px 4px,     
         rgba(0, 0, 0, 0.21) 0px 16px 8px,    
         rgba(14, 13, 10, 0.25) 0px 32px 16px; 
-        
     transition: all 0.3s ease-in-out;
-
     }
 
 .nav-item .icon {
@@ -322,6 +320,7 @@
     transition: opacity 0.2s ease;
 }
 
+
 .sidebar.sidebar.collapsed .toggle-button{
     opacity: 1; /* Show the button when collapsed */
     }
@@ -354,4 +353,4 @@
     
     }
 
-    
+

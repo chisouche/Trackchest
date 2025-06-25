@@ -1,8 +1,10 @@
-export default function Dashboard() {
+import Link from "next/link";
+
+export default function Home() {
   return (
-    <div>
-      <h1>Welcome to your Dashboard</h1>
-      <p>This is your finance control center.</p>
-    </div>
+    <main>
+      <h1>TrackChest</h1>
+      <Link href="/dashboard">Go to Dashboard</Link>
+    </main>
   );
 }
